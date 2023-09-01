@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- javascript -->
+    <script src="app.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Fiver</title>
+  </head>
+  <body>
+    <input
+      type="radio"
+      name="close"
+      class="radio-language input-display"
+      id="language-radio"
+    />
+    <!--  -->
+    <input
+      type="radio"
+      name="close"
+      class="radio-close input-display"
+      id="close-language-cont"
+      checked="checked"
+    />
+
+    <header class="header">
+      <nav class="nav">
+        <div class="main-nav">
+          <p class="fiver-logo">
+            <a class="logo-fiver" href="index.html">fiverr</a>
+            <span class="dot"></span>
+          </p>
+
+          <div class="search-btn-container header-search-container">
+            <input
+              type="search"
+              name="search any service"
+              id="search"
+              placeholder="Search for any service..."
+              class="search-input"
+            />
+            <button class="search-btn header-btn">
+              <ion-icon class="s" name="search-outline"></ion-icon>
+            </button>
+          </div>
+          <!--  -->
+          <ul class="nav-elements">
+            <li class="nav-child-one">
+              <a href="#" class="business-child">Business solutions</a>
+              <ion-icon
+                class="icon business-child"
+                name="chevron-down-outline"
+              ></ion-icon>
+
+              <div class="nav-cont solutions-container">
+                <div class="solutions-child">
+                  <p class="solution-heading">Fiverr Pro</p>
+                  <p class="solution-text">
+                    Top freelancers and professional business tools for any
+                    project
+                  </p>
+                </div>
+                <!--  -->
+                <div class="solutions-child">
+                  <p class="solution-heading">fiverr certified</p>
+                  <p class="solution-text">
+                    Your own branded marketplace of certified experts
+                  </p>
+                </div>
+                <!--  -->
+                <div class="solutions-child">
+                  <p class="solution-heading">fiverr enterprise</p>
+                  <p class="solution-text">
+                    SaaS to manage you freelance workforce and onboard
+                    additional talent
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="nav-child-two">
+              <a href="#" class="link-color">Explore</a>
+              <section class="nav-cont explore-container">
+                <div class="explore-child">
+                  <p class="explore-heading">Discover</p>
+                  <p class="solution-text">Inspiring projects made on Fiverr</p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Guides</p>
+                  <p class="solution-text">
+                    In-depth guides covering business topics
+                  </p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Learn</p>
+                  <p class="solution-text">
+                    Professional online courses, led by experts
+                  </p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Blog</p>
+                  <p class="solution-text">
+                    News, information and community stories
+                  </p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Community</p>
+                  <p class="solution-text">
+                    Connect with Fiverr’s team and community
+                  </p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Podcast</p>
+                  <p class="solution-text">
+                    Inside tips from top business minds
+                  </p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Logo Maker</p>
+                  <p class="solution-text">Create your logo instantly</p>
+                </div>
+                <!--  -->
+                <div class="explore-child">
+                  <p class="explore-heading">Fiverr workspace</p>
+                  <p class="solution-text">One place to manage your business</p>
+                </div>
+                <!--  -->
+              </section>
+            </li>
+
+            <li class="language-child">
+              <ion-icon class="icon link-color" name="globe-outline"></ion-icon>
+              <label for="language-radio" class="link-color">English</label>
+
+              <section class="language-container l">
+                <div class="whole-container">
+                  <div class="language-child">
+                    <div class="l-c-1">
+                      <div class="preferences">
+                        <p>Select your preferences</p>
+                        <label
+                          class="close-icon-container"
+                          for="close-language-cont"
+                        >
+                          <ion-icon
+                            class="close-icon"
+                            name="close-outline"
+                          ></ion-icon>
+                        </label>
+                      </div>
+                      <div class="category">
+                        <div class="lang category-border">Language</div>
+                        <div class="curr">Currency</div>
+                      </div>
+                    </div>
+
+                    <div class="cc">
+                      <div class="lang-cont lang-cont-visible">
+                        <ul class="lang-cont-grid">
+                          <li>
+                            <input
+                              type="radio"
+                              class="radio"
+                              name="language"
+                              id="english"
+                              checked
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="english">English</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="d"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="d">Deutsch</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="e"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="e">Espanol</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="f"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="f">Français</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="p"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="p">Português</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="i"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="i">Italiano</label>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <input
+                              class="radio"
+                              type="radio"
+                              name="language"
+                              id="n"
+                            />
+                            <ion-icon
+                              class="checkmark"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <label for="n">Netherlands</label>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="currency-container">
+                        <ul class="currency-list">
+                          <li>
+                            <div class="country-name">united states dollar</div>
+                            <div class="country-currency">USD - US$</div>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <div class="country-name">Euro</div>
+                            <div class="country-currency">EUR - €</div>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <div class="country-name">British Pound</div>
+                            <div class="country-currency">GBP - £</div>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <div class="country-name">Australian Dollar</div>
+                            <div class="country-currency">AUD - A$</div>
+                          </li>
+                          <!--  -->
+                          <li>
+                            <div class="country-name">Canadian Dollar</div>
+                            <div class="country-currency">CAD - CA$</div>
+                          </li>
+
+                          <!--  -->
+                          <li>
+                            <div class="country-name">Brazelian Real</div>
+                            <div class="country-currency">BRL - R$</div>
+                          </li>
+
+                          <!--  -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+
+            <li>
+              <a class="link-color">Become a seller</a>
+              <section class="signin-container">
+                <div class="main-signin">
+                  <div class="form-container">
+                    <div class="image-child">
+                      <div class="form-padding">
+                        <h2 class="med-heading">Success starts here</h2>
+                        <ul class="form-check-list">
+                          <li>
+                            <ion-icon
+                              class="checkmark-form"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <span>Over 600 categories</span>
+                          </li>
+                          <li>
+                            <ion-icon
+                              class="checkmark-form"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <span>Pay per project, not per hour</span>
+                          </li>
+                          <li>
+                            <ion-icon
+                              class="checkmark-form"
+                              name="checkmark-outline"
+                            ></ion-icon>
+                            <span
+                              >Access to talent and businesses across the
+                              globe</span
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-child-container">
+                      <div class="form-child form-padding">
+                        <div class="form-heading-container">
+                          <h3 class="form-ter-heading">
+                            Sign in to your account
+                          </h3>
+                          <p>
+                            <span class="light-text"
+                              >Don’t have an account?</span
+                            >
+                            <a href="#" class="join-link">Join here</a>
+                          </p>
+                        </div>
+
+                        <form action="#">
+                          <button class="btn1 large-btn-margin" type="button">
+                            <ion-icon
+                              class="icon-color google"
+                              name="logo-google"
+                            ></ion-icon>
+                            <span>Continue with Google</span>
+                          </button>
+                          <!--  -->
+                          <button
+                            class="btn1 large-btn-margin"
+                            type="button btn"
+                          >
+                            <ion-icon
+                              class="icon-color"
+                              name="mail-outline"
+                            ></ion-icon>
+                            <span>Continue with email/username</span>
+                          </button>
+
+                          <p class="or">OR</p>
+                          <p class="apple-facebook-container">
+                            <button class="btn1 btn-small" type="button">
+                              <ion-icon
+                                class="icon-color"
+                                name="logo-apple"
+                              ></ion-icon>
+                              <span>Apple</span>
+                            </button>
+
+                            <button class="btn1 btn-small" type="button">
+                              <ion-icon
+                                class="icon-color facebook"
+                                name="logo-facebook"
+                              ></ion-icon>
+                              <span>Facebook</span>
+                            </button>
+                          </p>
+                        </form>
+                        <p class="form-text">
+                          By joining, you agree to the Fiverr
+                          <a href="#" class="terms">Terms of Service</a>
+                          and to occasionally receive emails from us. Please
+                          read our
+                          <a href="#" class="terms">Privacy Policy </a> to learn
+                          how we use your personal data.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li class="bb">
+              <a class="link-color">Sign in</a>
+            </li>
+            <li>
+              <a href="#" class="btn join-btn nav-btn">Join</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav class="nav-wrapper">
+        <div class="subnav-fluid">
+          <ul class="subnav-container">
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Graphics & Design
+              </button>
+              <ul class="nav-menu">
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Logo & Brand Identity</p>
+                  </li>
+                  <li class="menu-child-items">Logo Design</li>
+                  <li class="menu-child-items">Brand Style Guides</li>
+                  <li class="menu-child-items">Business Cards & Stationery</li>
+                  <li class="menu-child-items">Fonts & Typography</li>
+                  <li class="menu-child-items blue flex">
+                    Logo Maker Tool
+                    <ion-icon
+                      class="tool blue"
+                      name="hammer-outline"
+                    ></ion-icon>
+                  </li>
+                </ul>
+                <!--  -->
+
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Art & Illustration</p>
+                  </li>
+                  <li class="menu-child-items">Illustration</li>
+                  <li class="menu-child-items flex-center">
+                    AI Artists <span class="new">new</span>
+                  </li>
+                  <li class="menu-child-items">Children Book Illustration</li>
+                  <li class="menu-child-items">Portraits & Caricatures</li>
+                  <li class="menu-child-items">Cartoons & Comics</li>
+                  <li class="menu-child-items">Pattern Design</li>
+                  <li class="menu-child-items">Tattoo Design</li>
+                  <li class="menu-child-items">Storyboards</li>
+                  <li class="menu-child-items">NFT Art</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Miscellaneous</p>
+                  </li>
+                  <li class="menu-child-items">Design Advice</li>
+                </ul>
+                <!--  -->
+
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Web & App Design</p>
+                  </li>
+                  <li class="menu-child-items">Website Design</li>
+                  <li class="menu-child-items">App Design</li>
+                  <li class="menu-child-items">UX Design</li>
+                  <li class="menu-child-items">Landing Page Design</li>
+                  <li class="menu-child-items">Icon Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Product & Gaming</p>
+                  </li>
+                  <li class="menu-child-items">Industrial & Product Design</li>
+                  <li class="menu-child-items">Character Modeling</li>
+                  <li class="menu-child-items">Game Art</li>
+                  <li class="menu-child-items">Graphics for Streamers</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Print Design</p>
+                  </li>
+                  <li class="menu-child-items">Flyer Design</li>
+                  <li class="menu-child-items">Brochure Design</li>
+                  <li class="menu-child-items">Poster Design</li>
+                  <li class="menu-child-items">Catalog Design</li>
+                  <li class="menu-child-items">Menu Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Visual Design</p>
+                  </li>
+                  <li class="menu-child-items">Image Editing</li>
+                  <li class="menu-child-items">Presentation Design</li>
+                  <li class="menu-child-items">Background Removal</li>
+                  <li class="menu-child-items">Infographic Design</li>
+                  <li class="menu-child-items">Vector Tracing</li>
+                  <li class="menu-child-items">Resume Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Marketing Design</p>
+                  </li>
+                  <li class="menu-child-items">Social Media Design</li>
+                  <li class="menu-child-items">Social Posts & Banners</li>
+                  <li class="menu-child-items">Email Design</li>
+                  <li class="menu-child-items">Web Banners</li>
+                  <li class="menu-child-items">Signage Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Packaging & Covers</p>
+                  </li>
+                  <li class="menu-child-items">Packaging & Label Design</li>
+                  <li class="menu-child-items">Book Design</li>
+                  <li class="menu-child-items">Book Covers</li>
+                  <li class="menu-child-items">Album Cover Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Packaging & Covers</p>
+                  </li>
+                  <li class="menu-child-items">
+                    Architecture & Building Design
+                  </li>
+                  <li class="menu-child-items">
+                    Architecture & Interior Design
+                  </li>
+                  <li class="menu-child-items">Landscape Design</li>
+                  <li class="menu-child-items">Building Engineering</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Fashion & Merchandise</p>
+                  </li>
+                  <li class="menu-child-items">T-Shirts & Merchandise</li>
+                  <li class="menu-child-items">Fashion Design</li>
+                  <li class="menu-child-items">Jewelry Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p class="flex-center">
+                      3D Design <span class="new">new</span>
+                    </p>
+                  </li>
+                  <li class="menu-child-items">3D Architecture</li>
+                  <li class="menu-child-items">3D Industrial Design</li>
+                  <li class="menu-child-items">3D Landscape</li>
+                  <li class="menu-child-items">3D Game Art</li>
+                  <li class="menu-child-items">3D Jewelry Design</li>
+                  <li class="menu-child-items">Jewelry Design</li>
+                  <li class="menu-child-items">3D Printing Characters</li>
+                  <li class="menu-child-items">3D Fashion & Garment</li>
+                </ul>
+
+                <!--  -->
+              </ul>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Programming & Tech
+              </button>
+              <!--  -->
+              <ul class="nav-menu nav-menu-2">
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Logo & Brand Identity</p>
+                  </li>
+                  <li class="menu-child-items">Logo Design</li>
+                  <li class="menu-child-items">Brand Style Guides</li>
+                  <li class="menu-child-items">Business Cards & Stationery</li>
+                  <li class="menu-child-items">Fonts & Typography</li>
+                  <li class="menu-child-items blue flex">
+                    Logo Maker Tool
+                    <ion-icon
+                      class="tool blue"
+                      name="hammer-outline"
+                    ></ion-icon>
+                  </li>
+                </ul>
+                <!--  -->
+
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Miscellaneous</p>
+                  </li>
+                  <li class="menu-child-items">Design Advice</li>
+                </ul>
+                <!--  -->
+
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Web & App Design</p>
+                  </li>
+                  <li class="menu-child-items">Website Design</li>
+                  <li class="menu-child-items">App Design</li>
+                  <li class="menu-child-items">UX Design</li>
+                  <li class="menu-child-items">Landing Page Design</li>
+                  <li class="menu-child-items">Icon Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Product & Gaming</p>
+                  </li>
+                  <li class="menu-child-items">Industrial & Product Design</li>
+                  <li class="menu-child-items">Character Modeling</li>
+                  <li class="menu-child-items">Game Art</li>
+                  <li class="menu-child-items">Graphics for Streamers</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Print Design</p>
+                  </li>
+                  <li class="menu-child-items">Flyer Design</li>
+                  <li class="menu-child-items">Brochure Design</li>
+                  <li class="menu-child-items">Poster Design</li>
+                  <li class="menu-child-items">Catalog Design</li>
+                  <li class="menu-child-items">Menu Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Visual Design</p>
+                  </li>
+                  <li class="menu-child-items">Image Editing</li>
+                  <li class="menu-child-items">Presentation Design</li>
+                  <li class="menu-child-items">Background Removal</li>
+                  <li class="menu-child-items">Infographic Design</li>
+                  <li class="menu-child-items">Vector Tracing</li>
+                  <li class="menu-child-items">Resume Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Marketing Design</p>
+                  </li>
+                  <li class="menu-child-items">Social Media Design</li>
+                  <li class="menu-child-items">Social Posts & Banners</li>
+                  <li class="menu-child-items">Email Design</li>
+                  <li class="menu-child-items">Web Banners</li>
+                  <li class="menu-child-items">Signage Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Packaging & Covers</p>
+                  </li>
+                  <li class="menu-child-items">Packaging & Label Design</li>
+                  <li class="menu-child-items">Book Design</li>
+                  <li class="menu-child-items">Book Covers</li>
+                  <li class="menu-child-items">Album Cover Design</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child zero-margin-bottom">
+                  <li class="menu-child-items">
+                    <p>Packaging & Covers</p>
+                  </li>
+                  <li class="menu-child-items">
+                    Architecture & Building Design
+                  </li>
+                  <li class="menu-child-items">
+                    Architecture & Interior Design
+                  </li>
+                  <li class="menu-child-items">Landscape Design</li>
+                  <li class="menu-child-items">Building Engineering</li>
+                </ul>
+                <!--  -->
+                <ul class="menu-child">
+                  <li class="menu-child-items">
+                    <p>Fashion & Merchandise</p>
+                  </li>
+                  <li class="menu-child-items">T-Shirts & Merchandise</li>
+                  <li class="menu-child-items">Fashion Design</li>
+                  <li class="menu-child-items">Jewelry Design</li>
+                </ul>
+                <!--  -->
+
+                <!--  -->
+              </ul>
+              <!--  -->
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Digital Marketing
+              </button>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Video & Animation
+              </button>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Writing & Translation
+              </button>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>Music & Audio</button>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>Business</button>
+            </li>
+            <!--  -->
+            <li class="subnav-child"><button class="link">Data</button></li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>Photography</button>
+            </li>
+            <!--  -->
+            <li class="subnav-child" data-dropdown>
+              <button class="link" data-dropdown-button>AI Services</button>
+            </li>
+            <!--  -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="main-hero-container">
+          <div class="hero-content">
+            <h1 class="main-heading">
+              Find the right <span class="freelance">freelance</span> service,
+              right away
+            </h1>
+
+            <div class="search-btn-container">
+              <input
+                type="search"
+                name="search any service"
+                id="search"
+                placeholder="Search for any service..."
+                class="search-input"
+              />
+              <button class="search-btn">
+                <ion-icon class="s" name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+            <div class="popular-links">
+              <span class="small-text">popular:</span>
+              <button class="popular-skills-button">Website Design</button>
+              <button class="popular-skills-button">WordPress</button>
+              <button class="popular-skills-button">Logo Design</button>
+              <button class="popular-skills-button">AI Services</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="company-wrapper">
+        <div class="company-container">
+          <span class="t">Trusted by:</span>
+          <figure>
+            <img
+              height="65"
+              src="images/company-logo/meta2x.b364aec.png"
+              alt="meta logo"
+            />
+          </figure>
+          <figure>
+            <img
+              height="65"
+              src="images/company-logo/google2x.4fa6c20.png"
+              alt="google"
+            />
+          </figure>
+          <figure>
+            <img
+              height="65"
+              src="images/company-logo/netflix2x.6b36ad6.png"
+              alt="netflix"
+            />
+          </figure>
+          <figure>
+            <img
+              height="65"
+              src="images/company-logo/pandg2x.0d06f7b.png"
+              alt="p and g"
+            />
+          </figure>
+          <figure>
+            <img height=65" src="images/company-logo/paypal2x.d2fa54d.png"
+            alt="pay pal" />
+          </figure>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="carousel-container">
+        <h2 class="popular-services-heading">Popular services</h2>
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Add talent to AI</small>
+                  <span>AI Artists</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/ai-artists-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Build your brand</small>
+                  <span>Logo Design</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/animated-explainer-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Showcase your story</small>
+                  <span>Book Covers</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/book-covers-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Learn your business</small>
+                  <span>Data Entry</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/data-entry-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Color your dreams</small>
+                  <span>Illustration</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/illustration-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Build your brand</small>
+                  <span>Logo Design</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/logo-design-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Unlock growth online</small>
+                  <span>SEO</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/seo-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Reach more customers</small>
+                  <span>Social Media</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/social-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Go global</small>
+                  <span>Translation</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/translation-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="img">
+                <h4 class="option-text">
+                  <small>Customize your site</small>
+                  <span>WordPress</span>
+                </h4>
+                <figure>
+                  <img
+                    src="images/carousel images/wordpress-2x.webp"
+                    alt="img"
+                    class="option-card-image"
+                    draggable="false"
+                  />
+                </figure>
+              </div>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+
+      <section class="section-pros">
+        <div class="main-pros-container">
+          <div class="pro-child-one">
+            <h2 class="pros-med-heading">The best part? Everything.</h2>
+            <ul>
+              <li>
+                <h3>
+                  <span>
+                    <ion-icon
+                      class="check-icon"
+                      name="checkmark-circle-outline"
+                    >
+                    </ion-icon>
+                  </span>
+                  <span>Stick to your budget</span>
+                </h3>
+                <div>
+                  Find the right service for every price point. No hourly rates,
+                  just project-based pricing.
+                </div>
+              </li>
+              <!--  -->
+              <li>
+                <h3>
+                  <span>
+                    <ion-icon
+                      class="check-icon"
+                      name="checkmark-circle-outline"
+                    >
+                    </ion-icon>
+                  </span>
+                  <span>Get quality work done quickly</span>
+                </h3>
+                <div>
+                  Hand your project over to a talented freelancer in minutes,
+                  get long-lasting results.
+                </div>
+              </li>
+              <!--  -->
+              <li>
+                <h3>
+                  <span>
+                    <ion-icon
+                      class="check-icon"
+                      name="checkmark-circle-outline"
+                    >
+                    </ion-icon>
+                  </span>
+                  <span>Pay when you're happy</span>
+                </h3>
+                <div>
+                  Upfront quotes mean no surprises. Payments only get released
+                  when you approve.
+                </div>
+              </li>
+              <!--  -->
+              <li>
+                <h3>
+                  <span>
+                    <ion-icon
+                      class="check-icon"
+                      name="checkmark-circle-outline"
+                    >
+                    </ion-icon>
+                  </span>
+                  <span>Count on 24/7 support</span>
+                </h3>
+                <div>
+                  Our round-the-clock support team is available to help anytime,
+                  anywhere.
+                </div>
+              </li>
+              <!--  -->
+            </ul>
+          </div>
+
+          <figure class="pro-child-two">
+            <div>
+              <img src="images/video.webp" alt="" />
+              <span>
+                <ion-icon class="play" name="play"></ion-icon>
+                ></span
+              >
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="skills-wrapper">
+        <div class="skills-container">
+          <h2 class="skills-heading">You need it, we've got it</h2>
+
+          <ul>
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/graphics-design.91dfe44.svg"
+                    alt=""
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Graphics & Design</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/online-marketing.a3e9794.svg"
+                    alt="online markiting"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Digital Marketing</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/writing-translation.a787f2f.svg"
+                    alt="writing-translation"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Writing & Translation</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/video-animation.1356999.svg"
+                    alt="graphics"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Video Animation</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/music-audio.ede4c90.svg"
+                    alt="music & Audio"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Music & Audio</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/programming.6ee5a90.svg"
+                    alt="programming and tech"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Programming & Tech</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/business.fabc3a7.svg"
+                    alt="business"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Business</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/lifestyle.112b348.svg"
+                    alt="lifestyle"
+                    width="50"
+                  />
+                </picture>
+                <figcaption>lifestyle</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/data.855fe95.svg"
+                    alt="data"
+                    width="50"
+                    height="50"
+                  />
+                </picture>
+                <figcaption>Data</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+            <li>
+              <figure>
+                <picture>
+                  <img
+                    src="images/skills-icon/photography.0cf5a3f.svg"
+                    alt=""
+                    width="50"
+                  />
+                </picture>
+                <figcaption>Photography</figcaption>
+              </figure>
+            </li>
+            <!--  -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="business-wrapper">
+        <div class="business-container">
+          <div>
+            <div class="business-solutions">
+              <p class="fiver-logo">
+                <a class="logo-fiver w" href="index.html">fiverr</a>
+                <span class="dot"></span><small>Business Solutions</small>
+              </p>
+
+              <h2>Advanced solutions and professional talent for businesses</h2>
+            </div>
+
+            <ul>
+              <li>
+                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                <div>
+                  <span>Fiverr Pro</span>
+                  <span
+                    >Access top freelancers and professional business tools for
+                    any project</span
+                  >
+                </div>
+              </li>
+              <!--  -->
+              <li>
+                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                <div>
+                  <span>Fiverr Certified</span>
+                  <span
+                    >Build your own branded marketplace of certified
+                    experts</span
+                  >
+                </div>
+              </li>
+              <!--  -->
+              <li>
+                <span><ion-icon name="checkmark-circle"></ion-icon></span>
+                <div>
+                  <span>Fiverr Enterprise</span>
+                  <span
+                    >Manage your freelance workforce and onboard additional
+                    talent with an end-to-end SaaS solution</span
+                  >
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="business-btn">Learn more</a>
+          </div>
+          <figure>
+            <img src="images/EN.webp" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="carousel-testimonial-container">
+        <div class="carousell">
+          <button class="carousel__button carousel__button__left is-hidden">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <figure class="carousel-figure">
+                  <img
+                    src="images/testimonial-slider/testimonial-video-still-haerfest.webp"
+                    alt=""
+                    class="carousel-img"
+                  />
+                </figure>
+                <div class="carousel__slide__child">
+                  <h5 class="flex-one">
+                    Tim and Dan Joo, Co-Founders
+
+                    <span class="line"></span>
+                    <span>
+                      <img
+                        src="images/testimonial-slider/testimonial-logo-img/haerfest-logo-x2.934ab63.png"
+                        alt="haerfest-logo-x2"
+                        class="carousel-img-logo"
+                        height="36"
+                      />
+                    </span>
+                  </h5>
+
+                  <blockquote class="italics">
+                    <i
+                      >"When you want to create a business bigger than yourself,
+                      you need a lot of help. That's what Fiverr does."</i
+                    >
+                  </blockquote>
+                </div>
+              </li>
+              <li class="carousel__slide current-slide">
+                <figure class="carousel-figure">
+                  <img
+                    src="images/testimonial-slider/testimonial-video-still-lavender.webp"
+                    alt=""
+                    class="carousel-img"
+                  />
+                </figure>
+                <div class="carousel__slide__child">
+                  <h5 class="flex-one">
+                    Brighid Gannon (DNP, PMHNP-BC), Co-Founder
+
+                    <span class="line"></span>
+                    <span>
+                      <img
+                        src="images/testimonial-slider/testimonial-logo-img/lavender-logo-x2.3fff9e7.png"
+                        alt="haerfest-logo-x2"
+                        class="carousel-img-logo"
+                        height="36"
+                      />
+                    </span>
+                  </h5>
+
+                  <blockquote class="italics">
+                    <i
+                      >"We used Fiverr for SEO, our logo, website, copy,
+                      animated videos — literally everything. It was like
+                      working with a human right next to you versus being across
+                      the world."</i
+                    >
+                  </blockquote>
+                </div>
+              </li>
+              <!--  -->
+
+              <li class="carousel__slide current-slide">
+                <figure class="carousel-figure">
+                  <img
+                    src="images/testimonial-slider/testimonial-video-still-naadam.webp"
+                    alt=""
+                    class="carousel-img"
+                  />
+                </figure>
+                <div class="carousel__slide__child">
+                  <h5 class="flex-one">
+                    Caitlin Tormey, Chief Commercial Officer
+
+                    <span class="line"></span>
+                    <span>
+                      <img
+                        src="images/testimonial-slider/testimonial-logo-img/naadam-logo-x2.a79031d.png"
+                        alt="haerfest-logo-x2"
+                        class="carousel-img-logo"
+                        height="36"
+                      />
+                    </span>
+                  </h5>
+
+                  <blockquote class="italics">
+                    <i
+                      >"We've used Fiverr for Shopify web development, graphic
+                      design, and backend web development. Working with Fiverr
+                      makes my job a little easier every day."</i
+                    >
+                  </blockquote>
+                </div>
+              </li>
+              <!-- 4 -->
+              <li class="carousel__slide current-slide">
+                <figure class="carousel-figure">
+                  <img
+                    src="images/testimonial-slider/testimonial-video-still-rooted.webp"
+                    alt=""
+                    class="carousel-img"
+                  />
+                </figure>
+                <div class="carousel__slide__child">
+                  <h5 class="flex-one">
+                    Kay Kim, Co-Founder
+
+                    <span class="line"></span>
+                    <span>
+                      <img
+                        src="images/testimonial-slider/testimonial-logo-img/rooted-logo-x2.7da3bc9.png"
+                        alt="haerfest-logo-x2"
+                        class="carousel-img-logo"
+                        height="36"
+                      />
+                    </span>
+                  </h5>
+
+                  <blockquote class="italics">
+                    <i
+                      >"It's extremely exciting that Fiverr has freelancers from
+                      all over the world — it broadens the talent pool. One of
+                      the best things about Fiverr is that while we're sleeping,
+                      someone's working."</i
+                    >
+                  </blockquote>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button__right">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </button>
+
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button
+            ><button class="carousel__indicator"></button
+            ><button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="logo-maker-section">
+        <div class="logo-maker-container">
+          <div class="logo-maker-content">
+            <div class="maker-logo">
+              <small class="fiver-logo logo-maker">
+                <a class="logo-fiver" href="index.html">fiverr</a>
+                <small>logo maker.</small>
+              </small>
+            </div>
+            <h2 class="logo-heading">
+              Make an incredible logo
+              <i>in minutes</i>
+            </h2>
+            <p>Pre-designed by top talent. Just add your touch.</p>
+
+            <a href="#">Try Fiverr Logo Maker</a>
+          </div>
+
+          <figure>
+            <img
+              src="images/logo-maker-banner-wide-desktop-1352-2x.webp"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+      <!--  -->
+
+      <section class="logo-maker-section">
+        <div class="logo-maker-container">
+          <div class="logo-maker-content content-two">
+            <h2 class="logo-heading logo-heading-two">
+              <span>Suddenly it's all so <i>doable</i>. </span>
+            </h2>
+            <a href="" class="btn">Join Fiverr</a>
+          </div>
+
+          <figure>
+            <img src="images/bg-signup-1400-x2.webp" alt="" />
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <section class="footer-section">
+        <div>
+          <span>fiverr</span>
+          <span class="copy"> &copy; Fiverr International Ltd. 2023</span>
+        </div>
+        <div class="footer-social-container">
+          <ul class="footer-social-logo">
+            <li>
+              <ion-icon class="social-logo" name="logo-linkedin"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="social-logo" name="logo-whatsapp"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="social-logo" name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="social-logo" name="logo-pinterest"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="social-logo" name="logo-twitter"></ion-icon>
+            </li>
+          </ul>
+
+          <ul class="footer-social-logo">
+            <li class="flex">
+              <ion-icon class="social-logo" name="globe-outline"></ion-icon>
+              <small>English</small>
+            </li>
+            <li>PKR</li>
+            <li>
+              <ion-icon
+                class="social-logo"
+                name="accessibility-outline"
+              ></ion-icon>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
