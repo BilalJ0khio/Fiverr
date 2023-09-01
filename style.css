@@ -1611,3 +1611,26 @@ ul.carousel__track {
 .footer-social-logo:first-child {
   gap: 1rem;
 }
+
+.accessibility-border {
+  border: 1px solid #ccc;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessibility-border .social-logo {
+  color: #6c6e71;
+  font-size: 2rem;
+}
+
+.small-logo {
+  font-size: 1.6rem;
+}
+
+.small-letter {
+  /* font-size: 1.4rem; */
+}
