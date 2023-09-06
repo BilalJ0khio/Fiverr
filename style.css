@@ -10,8 +10,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
 
+section {
+  margin-inline: auto;
+}
 :root {
   font-size: 62.3%;
 }
@@ -49,7 +53,6 @@ header {
   width: 100%;
   /* background: transparent; */
   z-index: 100;
-
   transition: all 300ms ease-in-out;
 }
 
@@ -93,6 +96,7 @@ header a {
   padding: 2rem 2rem;
   position: relative;
   z-index: 101;
+  gap: 2rem;
 }
 
 .header-search-container {
@@ -107,6 +111,7 @@ header a {
 
 .header-search-container input {
   flex-grow: 1;
+  width: 100%;
   padding: 0 1.5rem;
   border-width: 1px !important;
   box-shadow: none;
@@ -141,6 +146,10 @@ header a {
   gap: 3rem;
   position: relative;
 }
+
+.nav-elements label {
+  white-space: nowrap;
+}
 .nav-elements > li:first-child {
   gap: 0.5rem;
 }
@@ -155,8 +164,11 @@ header a {
 }
 
 .fiver-logo {
+  display: flex;
   font-size: 3.5rem;
   font-weight: 900;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
 .join-btn {
@@ -648,10 +660,12 @@ input.radio-close:checked + .header .l {
 
 .subnav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 1340px;
   margin: 0px auto;
   position: relative;
+  flex-wrap: wrap;
+  column-gap: 2.2rem;
 }
 
 .link {
@@ -765,13 +779,12 @@ input.radio-close:checked + .header .l {
   width: 100%;
   /* min-height: 850px; */
   height: calc(95vh);
-
   background-color: #0a4226;
   transition: all 200ms;
   background-image: url("images/hero-images/jenny-2x.jpg");
-
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position-x: 60%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -914,6 +927,7 @@ input.radio-close:checked + .header .l {
   /* border: 1px solid black; */
   margin-top: 10rem;
   margin-bottom: 10rem;
+  padding-inline: 5rem;
 }
 
 .wrapper {
@@ -1025,6 +1039,7 @@ input.radio-close:checked + .header .l {
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .option-text {
@@ -1069,7 +1084,7 @@ input.radio-close:checked + .header .l {
   display: grid;
   grid-template-columns: 10fr 13fr;
   gap: 2rem;
-  padding: 8rem 4rem;
+  padding: 6rem 3rem;
 }
 
 .pros-med-heading {
@@ -1241,6 +1256,7 @@ section {
   grid-template-columns: 40% 60%;
   align-items: center;
   justify-items: center;
+  column-gap: 2rem;
 }
 
 .business-container img {
@@ -1304,7 +1320,7 @@ section.business-wrapper ul li > div > :first-child {
 /*  crousel */
 
 .carousel-testimonial-container {
-  margin: 8rem 0rem 8rem 0rem;
+  margin: 8rem auto 8rem auto;
   display: flex;
   justify-content: center;
 }
@@ -1448,6 +1464,7 @@ ul.carousel__track {
 .logo-maker-section {
   margin: 10rem auto;
   max-width: 1300px;
+  padding: 2rem;
 }
 
 .logo-maker-container {
@@ -1456,13 +1473,12 @@ ul.carousel__track {
   /* grid-template-columns: 30% 70%; */
   position: relative;
   height: 100%;
-  min-height: 300px;
   overflow: hidden;
   background-color: #446ee7;
 }
 
 .logo-maker-content {
-  padding: 4rem;
+  padding: 2rem 2rem;
   color: white;
   position: relative;
   z-index: 50;
@@ -1475,12 +1491,17 @@ ul.carousel__track {
 
 .fiver-logo.logo-maker a {
   color: white;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .fiver-logo.logo-maker a + small {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
+}
+
+.logo-maker-section figure > img:nth-child(2),
+.logo-maker-section figure > img:nth-child(3) {
+  display: none;
 }
 
 .logo-maker-container img {
@@ -1489,14 +1510,14 @@ ul.carousel__track {
   object-fit: cover;
   position: absolute;
   z-index: 49;
-  top: -2rem;
+  top: -20%;
   right: 0;
 }
 
 .logo-heading {
-  max-width: 395px;
+  max-width: 370px;
   letter-spacing: 1px;
-  font-size: 3.4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -1541,6 +1562,52 @@ ul.carousel__track {
   border-radius: 0.4rem;
   margin-top: 3rem;
 }
+/*  */
+
+.join-fiver-section {
+  margin: 10rem auto;
+  max-width: 1300px;
+  padding: 2rem;
+}
+
+.join-fiver-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  background-color: #45091b;
+  padding: 10rem 1rem 10rem 6rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.join-text {
+  z-index: 50;
+}
+.join-text h2 {
+  letter-spacing: 1px;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.join-fiver-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: -13%;
+  object-fit: contain;
+  z-index: 49;
+  object-fit: contain;
+  display: block;
+}
+
+.j-btn {
+  color: white !important;
+  background-color: #1dbf73;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+}
 
 /*  */
 
@@ -1548,10 +1615,12 @@ ul.carousel__track {
   border-top: 1px solid rgb(228, 228, 228);
   margin: 9rem auto 0rem auto;
   max-width: 130rem;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 2rem 1rem 2rem 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #818387;
+  flex-wrap: wrap;
 }
 
 .footer-section > div:first-child > span:first-child {
