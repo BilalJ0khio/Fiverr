@@ -27,24 +27,223 @@
     <title>Fiver</title>
   </head>
   <body>
+    <!-- side nav close -->
+    <input
+      type="radio"
+      name="show"
+      class="input-display side-nav-close"
+      id="close-side-nav"
+      checked
+    />
+    <!-- side navigation input -->
+    <input
+      type="radio"
+      name="show"
+      class="input-display side-nav-open"
+      id="side-navigation"
+    />
+    <!-- side nav  -->
+    <label for="close-side-nav" class="side-nav-label"> </label>
+    <nav class="side-nav-wrapper">
+      <input
+        type="checkbox"
+        class="open-side-nav input-display"
+        name="n"
+        id="nav-open"
+      />
+      <!-- explore input -->
+      <input
+        type="checkbox"
+        class="input-display explore"
+        name="n"
+        id="explore"
+      />
+      <!-- business input  -->
+      <input
+        type="checkbox"
+        class="input-display business"
+        name="n"
+        id="business"
+      />
+      <!--  language input-->
+      <input
+        type="checkbox"
+        class="input-display language"
+        name="n"
+        id="language"
+      />
+      <!--  -->
+
+      <div class="main-side-nav">
+        <a class="j-btn side-nav-btn" href="#">Join Fiver</a>
+        <ul class="category-list">
+          <li>Sign in</li>
+          <li>
+            <label for="nav-open">
+              Browse category
+              <ion-icon
+                class="side-nav-arrow"
+                name="chevron-down-outline"
+                role="img"
+              ></ion-icon>
+            </label>
+            <ul class="browse-category-list">
+              <li>Graphic & Design</li>
+              <li>Digital Marketing</li>
+              <li>writing & translation</li>
+              <li>video & Animation</li>
+              <li>Music & Audio</li>
+              <li>Programming & Tech</li>
+              <li>Data</li>
+              <li>Business</li>
+              <li>lifestyle</li>
+              <li>photography</li>
+            </ul>
+          </li>
+          <!--  -->
+          <li>
+            <label for="explore"
+              >Explore
+              <ion-icon
+                class="explore-nav-arrow"
+                name="chevron-down-outline"
+                role="img"
+              ></ion-icon>
+            </label>
+            <ul class="explore-category-list general-list">
+              <li>Discover</li>
+              <li>Guides</li>
+              <li>Learn</li>
+              <li>logo Maker</li>
+              <li>Community</li>
+              <li>Podcast</li>
+              <li>Blog</li>
+              <li>Fiver workspace</li>
+              <!-- <li>Blog</li>
+              <li>Fiver workspace</li> -->
+            </ul>
+          </li>
+          <!--  -->
+          <li>
+            <label for="business" class="business-label"
+              >Business Solution
+              <ion-icon
+                class="business-nav-arrow"
+                name="chevron-down-outline"
+                role="img"
+              ></ion-icon>
+            </label>
+            <ul class="business-category-list general-list">
+              <li>Fiver Pro</li>
+              <li>Fiver Certified</li>
+              <li>Fiver Enterprise</li>
+
+              <!-- <li>Blog</li>
+              <li>Fiver workspace</li> -->
+            </ul>
+          </li>
+          <li class="general">General</li>
+          <li>Home</li>
+          <li class="side-nav-language-container">
+            <label for="language" class="language-label"
+              ><span class="language-span">
+                English
+                <ion-icon
+                  class="icon link-color md hydrated"
+                  name="globe-outline"
+                  role="img"
+                ></ion-icon>
+              </span>
+              <ion-icon
+                class="language-nav-arrow"
+                name="chevron-down-outline"
+                role="img"
+              ></ion-icon>
+            </label>
+            <ul class="language-category-list general-list">
+              <li>
+                <input
+                  type="radio"
+                  class="radio"
+                  name="language"
+                  id="english"
+                  checked
+                />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="english">English</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="d" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="d">Deutsch</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="e" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="e">Espanol</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="f" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="f">Français</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="p" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="p">Português</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="i" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="i">Italiano</label>
+              </li>
+              <!--  -->
+              <li>
+                <input class="radio" type="radio" name="language" id="n" />
+                <ion-icon class="checkmark" name="checkmark-outline"></ion-icon>
+                <label for="n">Netherlands</label>
+              </li>
+
+              <!-- <li>Blog</li>
+              <li>Fiver workspace</li> -->
+            </ul>
+          </li>
+          <li>PKR</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  -->
     <input
       type="radio"
       name="close"
-      class="radio-language input-display"
+      class="radio-language input-display d"
       id="language-radio"
     />
     <!--  -->
     <input
       type="radio"
       name="close"
-      class="radio-close input-display"
+      class="radio-close input-display d"
       id="close-language-cont"
       checked="checked"
     />
 
+    <!--  -->
+
     <header class="header">
       <nav class="nav">
         <div class="main-nav">
+          <label for="side-navigation" class="line-bar">
+            <span class="lines"></span>
+            <span class="lines"></span>
+            <span class="lines"></span>
+          </label>
           <p class="fiver-logo">
             <a class="logo-fiver" href="index.html">fiverr</a>
             <span class="dot"></span>

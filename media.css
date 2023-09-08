@@ -10,8 +10,14 @@
   .main-hero-container {
     background-position-x: 76%;
   }
+  .nav-menu {
+    width: 95%;
+  }
 }
 @media (max-width: 1159px) {
+  .line-bar {
+    display: grid;
+  }
   .main-heading {
     font-size: 4rem;
   }
@@ -35,6 +41,9 @@
 /*  */
 @media (max-width: 71.875em) {
   .nav-elements > :nth-child(3) {
+    display: none;
+  }
+  .nav-menu {
     display: none;
   }
 
@@ -111,6 +120,7 @@
   .btn-align {
     text-align: left;
     display: block;
+    border-radius: 0.5rem;
   }
 
   .hero-content {
@@ -123,6 +133,7 @@
 
   .company-container {
     column-gap: 2rem;
+    flex-wrap: wrap;
   }
   .company-container img {
     height: 5rem;
@@ -219,6 +230,16 @@
 }
 
 @media (max-width: 600px) {
+  .lines {
+    background-color: black;
+  }
+  .logo-maker-section {
+    padding: 0rem;
+  }
+  .main-nav {
+    padding: 1rem 2rem;
+  }
+
   .search-input1 {
     display: none;
   }
@@ -311,5 +332,32 @@
   }
   .join-text h2 {
     font-size: 2.8rem;
+  }
+}
+
+/* 450px */
+@media (max-width: 28.125em) {
+  .hero-content {
+    padding: 1rem;
+  }
+  .main-heading {
+    font-size: 3.4rem;
+    line-height: 1.3;
+  }
+
+  .carousel-container {
+    padding-inline: 3rem;
+  }
+  .main-pros-container {
+    padding: 6rem 2rem;
+  }
+  .pros-med-heading,
+  .skills-heading {
+    font-size: 2.8rem;
+  }
+
+  .main-pros-container h3 + div,
+  .main-pros-container h3 {
+    font-size: 1.6rem;
   }
 }
