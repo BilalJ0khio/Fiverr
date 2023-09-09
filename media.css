@@ -230,6 +230,8 @@
 }
 
 @media (max-width: 600px) {
+  :root {
+  }
   .lines {
     background-color: black;
   }

@@ -346,3 +346,16 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
+
+const lineBar = document.querySelector(".line-bar");
+const navLabel = document.querySelector(".side-nav-label");
+const body = document.querySelector("body");
+console.log(body);
+
+lineBar.addEventListener("click", () => {
+  body.classList.add("overflow");
+});
+
+navLabel.addEventListener("click", () => {
+  body.classList.remove("overflow");
+});
